@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #F1F5F8;
+}
+
+input:focus {
+  outline: none;
+}
+
+nav {
+  background-color: royalblue;
+}
+
+nav .container .nav-wrapper {
+  display: inline;
+  padding: 20px 0 20px 0;
+}
+
+nav .container .nav-wrapper .aues-title {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo img {
+  width: 100%;
+}
+
+nav .container .nav-wrapper .aues-title h1 {
+  color: #F1F5F8;
+}
+
+nav .container .nav-wrapper .aues-select {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .nav-wrapper .aues-select a {
+  color: #F1F5F8;
+  text-decoration: none;
+}
+
+nav .container .nav-wrapper .aues-select a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: royalblue;
+  }
+  nav .container .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  nav .container .nav-wrapper .aues-title {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container .nav-wrapper .aues-select {
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.aues-title {
+  width: unset !important;
+}
+
+#sorter button {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px black solid;
+}
+
+#welcomer {
+  margin-top: 30px;
+}
+
+#welcomer .container .welcomer-wrapper .texter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcomer .container .welcomer-wrapper .texter form h1 {
+  font-size: xx-large;
+  color: royalblue;
+}
+
+#welcomer .container .welcomer-wrapper .texter form input {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#welcomer .container .welcomer-wrapper .texter form input[name="out"] {
+  background-color: #db0030;
+}
+
+#welcomer .container .welcomer-wrapper .texter form input[name="log"] {
+  background-color: royalblue;
+}
+
+#selectors {
+  margin-top: 30px;
+}
+
+#selectors .container .selectors-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#selectors .container .selectors-wrapper form button {
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+#selectors .container .selectors-wrapper form button[name="enrolled"] {
+  background-color: #00804b;
+}
+
+#selectors .container .selectors-wrapper form button[name="waitinglist"] {
+  background-color: darkorange;
+}
+
+#selectors .container .selectors-wrapper form button[name="declined"] {
+  background-color: #db0030;
+}
+
+#infoer {
+  margin-top: 30px;
+}
+
+#infoer .container .infoer-wrapper {
+  max-width: 1500px;
+  margin: auto;
+  overflow: scroll;
+}
+
+#infoer .container .infoer-wrapper h1 {
+  margin-bottom: 20px;
+}
+
+#infoer .container .infoer-wrapper table {
+  border-spacing: 1px;
+  width: 100%;
+}
+
+#infoer .container .infoer-wrapper table tr th, #infoer .container .infoer-wrapper table tr td {
+  padding: 10px;
+  width: calc(100% / 9);
+}
+
+#infoer .container .infoer-wrapper table tr th {
+  color: white;
+  background-color: royalblue;
+}
+
+#infoer .container .infoer-wrapper table tr td {
+  background-color: white;
+  font-size: 16px;
+}
+
+#facultymanagement {
+  margin-top: 30px !important;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #facbut input {
+  background-color: #00804b;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #newfac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #newfac input {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #newfac input[name="addfac"] {
+  background-color: royalblue;
+  border: none;
+  color: white;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list {
+  margin-top: 20px;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list #listtopper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list #listtopper a {
+  border: 0;
+  padding: 10px;
+  background-color: #db0030;
+  color: white;
+  text-decoration: none;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list table {
+  width: 100%;
+  border-spacing: 1px;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list th {
+  width: calc(100% / 3 - 1%);
+  background-color: #db0030;
+  color: white;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list th, #facultymanagement .container .facultymanagement-wrapper #list td {
+  padding: 10px;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list td {
+  background-color: white;
+  color: black;
+}
+
+#facultymanagement .container .facultymanagement-wrapper #list .deacrow {
+  background-color: #111111;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

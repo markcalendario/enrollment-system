@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import '../../css/all.scss';
+
+#guide {
+    margin-top: 30px;
+    .container {
+        .guide-wrapper {
+            .guide-content {
+                background-color: $mainAccent;
+                border-radius: 10px;
+                padding: 20px;
+                color: $primaryWhite;
+                @include shade();
+                p {
+                    padding-bottom: 20px;
+                }
+                .requirements {
+                    ul {
+                        list-style: square;
+                        li {
+                            margin-left: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#agreement {
+    margin-top: 30px;
+    .container {
+        .guide-wrapper {
+            .guide-content {
+                background-color: $dangerAccent;
+                border-radius: 10px;
+                padding: 20px;
+                color: $primaryWhite;
+                p {
+                    padding-bottom: 20px;
+                }
+                .requirements {
+                    ul {
+                        list-style: decimal;
+                        li {
+                            margin-left: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#firstform {
+    margin-top: 30px;
+
+    .container {
+        .firstform-wrapper {
+            p {
+                padding-bottom: 30px;
+            }
+            form {
+                display: flex;
+                justify-content: space-between;
+                .left, .right {
+                    width: 45%;
+                }
+                .inputer {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px 0 20px 0;
+
+                    label {
+                        padding-bottom: 10px;
+                    }
+                    input, select, button {
+                        padding: 15px;
+                        border: none;
+                        border-radius: 10px;
+                        @include shade;
+                        background-color: white;
+                    }
+                    button {
+                        background-color: $stableAccent;
+                        color: white;
+                        cursor: pointer;
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+}

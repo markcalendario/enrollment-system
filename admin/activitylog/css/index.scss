@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import '../../../css/all.scss';
+
+#activitylog {
+    margin: 30px 0;
+
+    .container {
+        .wrapper {
+            
+            .topper {
+                form {
+                    margin: 10px 0;
+                    button {
+                        background-color: $dangerAccent;
+                        border: 0;
+                        color: white;
+                        padding: 10px;
+                    }
+                }
+            }
+            table {
+                margin: 20px 0;
+                tr {
+                    td,th {
+                        width: calc(100% /2);
+                        padding: 10px;
+                    }
+                    td {
+                        background-color: white;
+
+                        .remove {
+                            background-color: darkorange;
+                            border: 0;
+                            color: white;
+                            padding: 10px;
+                        }
+                    }
+                    th {
+                        color: white;
+                        background-color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

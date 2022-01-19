@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #F1F5F8;
+}
+
+input:focus {
+  outline: none;
+}
+
+nav {
+  background-color: royalblue;
+}
+
+nav .container .nav-wrapper {
+  display: inline;
+  padding: 20px 0 20px 0;
+}
+
+nav .container .nav-wrapper .aues-title {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo img {
+  width: 100%;
+}
+
+nav .container .nav-wrapper .aues-title h1 {
+  color: #F1F5F8;
+}
+
+nav .container .nav-wrapper .aues-select {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .nav-wrapper .aues-select a {
+  color: #F1F5F8;
+  text-decoration: none;
+}
+
+nav .container .nav-wrapper .aues-select a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: royalblue;
+  }
+  nav .container .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  nav .container .nav-wrapper .aues-title {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container .nav-wrapper .aues-select {
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#activitylog {
+  margin: 30px 0;
+}
+
+#activitylog .container .wrapper .topper form {
+  margin: 10px 0;
+}
+
+#activitylog .container .wrapper .topper form button {
+  background-color: #db0030;
+  border: 0;
+  color: white;
+  padding: 10px;
+}
+
+#activitylog .container .wrapper table {
+  margin: 20px 0;
+}
+
+#activitylog .container .wrapper table tr td, #activitylog .container .wrapper table tr th {
+  width: calc(100% /2);
+  padding: 10px;
+}
+
+#activitylog .container .wrapper table tr td {
+  background-color: white;
+}
+
+#activitylog .container .wrapper table tr td .remove {
+  background-color: darkorange;
+  border: 0;
+  color: white;
+  padding: 10px;
+}
+
+#activitylog .container .wrapper table tr th {
+  color: white;
+  background-color: gray;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import '../../css/all.scss';
+
+
+#welcomer {
+    margin-top: 30px;
+    .container {
+        .welcomer-wrapper {
+            .texter {
+                form {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1 {
+                        font-size: xx-large;
+                    }
+                    input, button {
+                        width: 100px;
+                        padding: 10px;
+                        border: none;
+                        background-color: $dangerAccent;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    button {
+                        background-color: $mainAccent;
+                    }
+
+                    input[type="text"] {
+                        background-color: transparent !important;
+                        cursor: 0;
+                        color: black;
+                        border: 1px black solid !important;
+                    }
+
+                    button[name="saveNewSection"] {
+                        background-color: green !important;
+                    }
+                }
+                .ne {
+                    color: $dangerAccent;
+                }
+                .ok {
+                    color: $stableAccent;
+                }
+                .wl {
+                    color: darkorange;
+                }
+            }
+        }
+    }
+}
+
+#step-one-preview {
+    margin-top: 20px;
+    .container {
+        .step-one-preview-wrapper {
+            .content {
+                table {
+                    width: 100%;
+                    cellpadding: pixels;
+                    background: $mainAccent;
+                    text-align: left;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 20px;
+                    th {
+                        padding: 10px 0 10px 0;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#firstform {
+    margin-top: 30px;
+
+    .container {
+        .firstform-wrapper {
+            p {
+                padding-bottom: 30px;
+            }
+
+            .inputer {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0 20px 0;
+
+                label {
+                    padding-bottom: 10px;
+                }
+                input, select, button {
+                    padding: 15px;
+                    border: none;
+                    border-radius: 10px;
+                    @include shade;
+                    background-color: white;
+                }
+                button {
+                    background-color: $stableAccent;
+                    color: white;
+                    cursor: pointer;
+                    font-size: large;
+                }
+            
+            }
+        }
+    }
+}
+
+@media print {
+    h1, p, th, td {
+        color: black;
+    }
+
+    button, input {
+        display: none;
+    }
+}

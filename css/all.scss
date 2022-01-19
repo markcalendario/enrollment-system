@@ -1,0 +1,120 @@
+
+// COLORS
+$mainAccent : royalblue;
+$secondaryAccent : royalblue;
+$dangerAccent : #db0030;
+$primaryWhite : #F1F5F8;
+$stableAccent : rgb(0, 128, 75);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: $primaryWhite;
+}
+
+input:focus {
+    outline: none;
+}
+
+@mixin shade() {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+// TOP BAR
+
+nav {
+    background-color: $mainAccent;
+
+    .container {
+        .nav-wrapper {
+            display: inline;
+            padding: 20px 0 20px 0;
+            .aues-title {
+                padding-top: 20px;
+                display: flex;
+                margin: auto;
+                justify-content: space-between;
+                align-items: center;
+                width: 130px;
+                .au-logo {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+                h1 {
+                    color: $primaryWhite;
+                }
+            }
+            .aues-select {
+                margin-top: 20px;
+                padding-bottom: 20px;
+                justify-content: space-between;
+                display: flex;
+                
+                a {
+                    color: $primaryWhite;
+                    text-decoration: none;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        background-color: $mainAccent;
+    
+        .container {
+            .nav-wrapper {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px 0 20px 0;
+                .aues-title {
+                    padding: 0;
+                    margin: 0;
+                    .au-logo {
+                        img {
+                        }
+                        
+                    }
+                    h1 {
+                    }
+                }
+                .aues-select {
+                    width: 45%;
+                    justify-content: space-between;
+                    display: flex;
+                    a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

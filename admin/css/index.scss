@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import '../../css/all.scss';
+
+.aues-title {
+    width: unset !important;
+}
+
+
+#sorter {
+    button {
+        margin-top: 5px;
+        padding: 5px;
+        background-color: white;
+        border: 1px black solid;
+    }
+}
+
+#welcomer {
+    margin-top: 30px;
+    .container {
+        .welcomer-wrapper {
+            .texter {
+                form {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1 {
+                        font-size: xx-large;
+                        color: $mainAccent;
+                    }
+                    input {
+                        width: 100px;
+                        padding: 10px;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+
+                        &[name="out"] {
+                            background-color: $dangerAccent;
+                        }
+
+                        &[name="log"] {
+                            background-color: $mainAccent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#selectors {
+    margin-top: 30px;
+    .container {
+        .selectors-wrapper {
+            form {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                button {
+                    border: none;
+                    padding: 10px;
+                    color: white;
+                    margin-top: 20px;
+
+                    &[name="enrolled"] {
+                        background-color: $stableAccent;
+                    }
+
+                    &[name="waitinglist"] {
+                        background-color: darkorange;
+                    }
+                    &[name="declined"] {
+                        background-color: $dangerAccent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#infoer {
+    margin-top: 30px;
+    .container {
+        .infoer-wrapper {
+            max-width: 1500px;
+            margin: auto;
+            overflow: scroll;
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            table {
+                border-spacing: 1px;
+                width: 100%;
+                tr {
+                    th, td {
+                        padding: 10px;
+                        width: calc(100% / 9);
+                    }
+
+                    th {
+                        color: white;
+                        background-color: $mainAccent;
+                    }
+
+                    td {
+                        background-color: white;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#facultymanagement {
+    margin-top: 30px !important;
+    .container {
+        .facultymanagement-wrapper {
+            #facbut {
+                input {
+                    background-color: $stableAccent;
+                    padding: 20px;
+                    width: 100%;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                }
+                
+            }
+
+            #newfac {
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin-top: 10px;
+                    padding: 10px;
+                &[name="addfac"] {
+                    background-color: $mainAccent;
+                    border: none;
+                    color: white;
+                }
+                }
+            }
+
+            #list {
+                margin-top: 20px;
+
+                #listtopper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 20px 0;
+
+                    a {
+                        border: 0;
+                        padding: 10px;
+                        background-color: $dangerAccent;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+                table {
+                    width: 100%;
+                    border-spacing: 1px;
+                }
+
+                th {
+                    width: calc(100% / 3 - 1%);
+                    background-color: $dangerAccent;
+                    color: white;
+                }
+
+                th, td {
+                    padding: 10px;
+                }
+
+                td {
+                    background-color: white;
+                    color: black;
+                }
+
+                .deacrow {
+                    background-color: rgb(17, 17, 17);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {}

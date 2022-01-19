@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #F1F5F8;
+}
+
+input:focus {
+  outline: none;
+}
+
+nav {
+  background-color: royalblue;
+}
+
+nav .container .nav-wrapper {
+  display: inline;
+  padding: 20px 0 20px 0;
+}
+
+nav .container .nav-wrapper .aues-title {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+nav .container .nav-wrapper .aues-title .au-logo img {
+  width: 100%;
+}
+
+nav .container .nav-wrapper .aues-title h1 {
+  color: #F1F5F8;
+}
+
+nav .container .nav-wrapper .aues-select {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .nav-wrapper .aues-select a {
+  color: #F1F5F8;
+  text-decoration: none;
+}
+
+nav .container .nav-wrapper .aues-select a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: royalblue;
+  }
+  nav .container .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  nav .container .nav-wrapper .aues-title {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container .nav-wrapper .aues-select {
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#front-ui {
+  background-image: url(../assets/overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: anim 0.3s;
+          animation: anim 0.3s;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: roll 1.3s;
+          animation: roll 1.3s;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-image img {
+  width: 100%;
+}
+
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes roll {
+  from {
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-texters {
+  margin-top: 20px;
+  text-align: center;
+  color: #F1F5F8;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-texters h1 {
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-texters p {
+  font-size: larger;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-enrollnow {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#front-ui .container .front-ui-wrapper .front-ui-content .front-ui-enrollnow a {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #F1F5F8;
+  text-decoration: none;
+  padding: 10px;
+  background-color: royalblue;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 140px;
+  margin: auto;
+}
+
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#about {
+  margin-top: 30px;
+}
+
+#about .container .about-wrapper h1 {
+  color: black;
+  text-align: center;
+}
+
+#about .container .about-wrapper .card {
+  margin-top: 20px;
+  background-color: royalblue;
+  padding: 20px;
+  border-radius: 10px;
+  color: #F1F5F8;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#about .container .about-wrapper .card .card-title h1 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #F1F5F8;
+}
+
+#about .container .about-wrapper .card .card-content p {
+  font-size: 20px;
+}
+
+#about .container .about-wrapper .card:hover {
+  -webkit-transform: translateY(-10px) scale(1.03);
+          transform: translateY(-10px) scale(1.03);
+  cursor: default;
+  background-color: transparent;
+  border: 1px royalblue solid;
+  color: royalblue;
+}
+
+#about .container .about-wrapper .card:hover h1 {
+  color: royalblue;
+}
+
+#waywf {
+  margin-top: 50px;
+  background: royalblue;
+}
+
+#waywf .container .waywf-wrapper .waywf-texter {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#waywf .container .waywf-wrapper .waywf-texter h1 {
+  text-align: center;
+  color: #F1F5F8;
+}
+
+#enrollnow {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#enrollnow .container .enrollnow-wrapper .imgcontain {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#enrollnow .container .enrollnow-wrapper .imgcontain img {
+  width: 100%;
+}
+
+#enrollnow .container .enrollnow-wrapper .texter {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#login {
+  margin-top: 30px;
+}
+
+#login .container .login-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login .container .login-wrapper form input {
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #F1F5F8;
+  border: 0;
+}
+
+#login .container .login-wrapper form input::-webkit-input-placeholder {
+  color: #F1F5F8;
+}
+
+#login .container .login-wrapper form input:-ms-input-placeholder {
+  color: #F1F5F8;
+}
+
+#login .container .login-wrapper form input::-ms-input-placeholder {
+  color: #F1F5F8;
+}
+
+#login .container .login-wrapper form input::placeholder {
+  color: #F1F5F8;
+}
+
+#login .container .login-wrapper form input[type="submit"] {
+  background-color: green;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: royalblue;
+  }
+  nav .container .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  nav .container .nav-wrapper .aues-title {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container .nav-wrapper .aues-select {
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #about {
+    margin-top: 30px;
+  }
+  #about .container .about-wrapper h1 {
+    font-size: xx-large;
+    margin-bottom: 30px;
+  }
+  #about .container .about-wrapper .about-card-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #about .container .about-wrapper .about-card-all .card {
+    width: calc(100% / 3 - 5%);
+  }
+  #enrollnow {
+    margin-bottom: 50px;
+  }
+  #enrollnow .container .enrollnow-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #login {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #login .container .login-wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #login .container .login-wrapper form input {
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #F1F5F8;
+    border: 0;
+    width: calc(100% / 3 - 5%);
+  }
+  #login .container .login-wrapper form input::-webkit-input-placeholder {
+    color: #F1F5F8;
+  }
+  #login .container .login-wrapper form input:-ms-input-placeholder {
+    color: #F1F5F8;
+  }
+  #login .container .login-wrapper form input::-ms-input-placeholder {
+    color: #F1F5F8;
+  }
+  #login .container .login-wrapper form input::placeholder {
+    color: #F1F5F8;
+  }
+  #login .container .login-wrapper form input[type="submit"] {
+    background-color: green;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,294 @@
+// ITO AY MAIN STYLESHEET
+@import '../css/all.scss';
+
+
+
+#front-ui {
+
+    background-image: url(../assets/overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        .front-ui-wrapper {
+            .front-ui-content {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                .front-ui-image {
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                    animation: roll 1.3s;
+
+                    @keyframes roll {
+                        from {transform: rotate(75deg);}
+                        to {transform: rotate(0deg);}
+                    }
+                }
+                .front-ui-texters {
+                    margin-top: 20px;
+                    text-align: center;
+                    color: $primaryWhite;
+                    h1 {
+                        font-size: xx-large;
+                        margin-top: 10px;
+                    }
+                    p {
+                        font-size: larger;
+                    }
+                }
+                .front-ui-enrollnow {
+                    margin-top: 30px;
+                    text-align: center;
+                    a {
+                        @include shade();
+                        color: $primaryWhite;
+                        text-decoration: none;
+                        padding: 10px;
+                        background-color: $mainAccent;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 140px;
+                        margin: auto;
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    animation: anim 0.3s;
+    @keyframes anim {
+        from {
+            transform: scale(0.5);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+#about {
+    margin-top: 30px;
+    .container {
+        .about-wrapper {
+            h1 {
+                color: black;
+                text-align: center;
+            }
+            .card {
+                margin-top: 20px;
+                background-color: $mainAccent;
+                padding: 20px;
+                border-radius: 10px;
+                color: $primaryWhite;
+                @include shade();
+                .card-title {
+                    h1 {
+                        text-align: left;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                        color: $primaryWhite;
+                    }
+                }
+                .card-content {
+                    p {
+
+                        font-size: 20px;
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-10px) scale(1.03);
+                    cursor: default;
+                    background-color: transparent;
+                    border: 1px $mainAccent solid;
+                    color: $mainAccent;
+                    h1 {
+                        color: $mainAccent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#waywf {
+    margin-top: 50px;
+    background: $mainAccent;
+    .container {
+        .waywf-wrapper {
+            .waywf-texter {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                h1 {
+                    text-align: center;
+                    color: $primaryWhite;
+                }
+            }
+        }
+    }
+}
+
+#enrollnow {
+    margin-top: 30px;
+    text-align: center;
+    .container {
+        .enrollnow-wrapper {
+            .imgcontain {
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+            .texter {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+#login {
+    margin-top: 30px;
+    .container {
+        .login-wrapper {
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    background-color: $mainAccent;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    color: $primaryWhite;
+                    border: 0;
+                    &::placeholder {
+                        color: $primaryWhite;
+                    }
+                }
+                input[type="submit"] {
+                    background-color: green;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        background-color: $mainAccent;
+    
+        .container {
+            .nav-wrapper {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px 0 20px 0;
+                .aues-title {
+                    padding: 0;
+                    margin: 0;
+                    .au-logo {
+                        img {
+                        }
+                        
+                    }
+                    h1 {
+                    }
+                }
+                .aues-select {
+                    width: 45%;
+                    justify-content: space-between;
+                    display: flex;
+                    a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        margin-top: 30px;
+        .container {
+            .about-wrapper {
+                h1 {
+                    font-size: xx-large;
+                    margin-bottom: 30px;
+                }
+                .about-card-all {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .card {
+                        width: calc(100% / 3 - 5%);
+                        .card-title {
+                            h1 {
+                            }
+                        }
+                        .card-content {
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #enrollnow {
+        margin-bottom: 50px;
+        .container {
+            .enrollnow-wrapper {
+                display: flex;
+                align-items: center;
+                .imgcontain {
+                    img {
+                    }
+                }
+                .texter {
+                }
+            }
+        }
+    }
+
+    #login {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .container {
+            .login-wrapper {
+                form {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    input {
+                        background-color: $mainAccent;
+                        padding: 10px;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        color: $primaryWhite;
+                        border: 0;
+                        width: calc(100% / 3 - 5%);
+                        &::placeholder {
+                            color: $primaryWhite;
+                        }
+                    }
+                    input[type="submit"] {
+                        background-color: green;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
