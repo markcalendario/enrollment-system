@@ -1,6 +1,6 @@
 
 # Basic Enrollment System
-A basic enrollment system of Arellano University - Jose Rizal High School.
+A Database Driven Enrollment System of Arellano University - Jose Rizal High School
 
 
 
@@ -12,6 +12,7 @@ A basic enrollment system of Arellano University - Jose Rizal High School.
 - Login System
 - Admin System
 - Document Printing Feature
+- Activity Log
 
 
 ## Tech Stacks
