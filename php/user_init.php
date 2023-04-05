@@ -23,7 +23,7 @@
         private $accstatus = '';
         
 
-        public function user() {
+        public function __construct() {
             $con = connect();
 
             $sql = "SELECT * FROM user_info
@@ -247,7 +247,7 @@
         public $lastSchool = '';
         
 
-        public function enrollee() {
+        public function __construct() {
             $con = connect();
 
             $sql = "SELECT * FROM user_info

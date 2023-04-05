@@ -4,14 +4,20 @@
     include 'php/log.php';
     session_start();
 
-    $user = new user;
-    if (isset($_SESSION['accessed']) && $user->getutype() == 0) {
+		if (isset($_SESSION['accessed'])) {
+			dispatchUserToRespectivePages(new user);
+		}
+		
+		function dispatchUserToRespectivePages($user)
+		{
+			if ($user->getutype() == 0) {
         header("location: enrollee");
-    } else if (isset($_SESSION['accessed']) && $user->getutype() == 1) {
+    	} else if ($user->getutype() == 1) {
         header("location: faculty");
-    } else if(isset($_SESSION['accessed']) && $user->getutype() == 2) {
+    	} else if($user->getutype() == 2) {
         header("location: admin"); 
-    }
+    	}
+		}
 
     if (isset($_POST['login'])) {
         verify();
